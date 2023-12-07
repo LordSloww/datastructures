@@ -1,0 +1,5 @@
+hello this line is a test for part 2 :D
+this is line 1
+this is line 2
+this is line 3
+there are 5 lines in total
