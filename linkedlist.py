@@ -29,6 +29,23 @@ class LinkedList():
             #update the pointers so the new node is the head
             newNode.set_next(self.head)
             self.head = newNode
+    
+    def delete(myList, data):
+        #start at the head of the list
+        current = myList.head
+        #check if node is to be deleted
+        if current.data == data:
+            #update the head pointer
+            myList.head = current.next
+        else:
+            #repeat untill the node has been found
+            while current.next.data != data:
+                #change the current node to be the next node
+                current = current.next
+
+            #set the pointer to be the next nodes pointer
+                current.next = current.next.next
+                      
 
     def traverse(self):        
         #set the current node as the head
