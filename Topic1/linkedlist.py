@@ -57,4 +57,4 @@ class LinkedList():
             current = current.get_next()
 
 #instantiate an emptu linked list object
-myList = LinkedList()
+myList = LinkedList() 
