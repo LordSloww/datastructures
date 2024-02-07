@@ -1,3 +1,4 @@
+import time
 #define the data, and pointer placeholders for easier coding.
 data = 0 
 pointer = 1
@@ -8,22 +9,37 @@ LinkedList = [["Bob" , 1] , ["Sarah" , 2 ] , ["Sharon" ,3 ] , ["" , None ] , [""
 for i in range (0,5):
     if LinkedList[i][data] != "":
         LinkedList[i][pointer] = id(LinkedList[i + 1][data])
-        print(LinkedList)
     else:
+        print(LinkedList)
         break
 #define adding data subroutine
 def add(information):
     #create a current variable difined by the memory location of the variable data
     current = id(information)
     print ('The Location in memory of "', information, '" is:', current)
-    getEmpty()
-         
-    #USE GET EMPTY TO PLACE CURRENT AND INFORMATION INTO LINKED LIST :) IMPORTANT /////////////////////////////////////////////////////////////////////
+    locationofempty = id(getEmpty())
+    print('The memory location where the value will be inserted is: ')
+    time.sleep(1)
+    print('Loading.')
+    time.sleep(0.5)
+    print('Loading..')
+    time.sleep(0.5)
+    print('Loading...')
+    time.sleep(0.5)
+    print(locationofempty)
+    linkedlist[]
 
 def getEmpty():
     for i in range(0, len(LinkedList)):
         if LinkedList[1][pointer] == None:
-            return i
+            temporary = i - 1
+            return temporary
 
             
-add('Sasha')
+print('Would you like to:')
+print('A, add a new variable')
+print('B, delete an existing variable')
+print('C, display the list on screen')
+command = input('Please answer in A,B or C: ')
+if command == 'A':
+    name = input('What ')
