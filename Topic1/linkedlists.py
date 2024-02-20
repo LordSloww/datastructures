@@ -61,4 +61,4 @@ if command == 'B':
 if command == 'C':
     print(LinkedList)
 
-    #FIX UP THE CODE ///////////////// LINKEDLISTS.TXT NEEDS TO BE ARRAY FOR IT TO WORK
+    #FIX UP THE CODE ///////////////// LINKEDLISTS.TXT NEEDS TO BE ARRAY FOR IT TO WORK 
